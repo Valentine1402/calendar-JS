@@ -1,0 +1,78 @@
+/* regole generali */
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Lato', sans-serif;
+ text-decoration: none;
+}
+body{
+ background-color: #161C38;
+}
+/* box calendario */
+.content{
+ height: 600px;
+ width:900px;
+ position: absolute;
+ top: 50%;
+ left:50%;
+ transform: translate(-50%, -50%);
+ display: flex;
+ flex-direction: column;
+ background-color:#D5CABD;
+ border-radius: 10px;
+}
+
+/* nav calendario */
+.nav{
+ flex-basis: 15%;
+ padding: 20px 20px;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ background: #4E8397;
+}
+
+#mese-now{
+ color:#baad9e;
+ font-size: 40px;
+}
+
+/* bottoni */
+#btn-ind, #btn-ava{
+ padding: 13px;
+ border-radius: 7px;
+ background: #845EC2;
+ color:#D5CABD;
+ font-style: normal;
+}
+
+#btn-ind a, #btn-ava a{
+ color: #D5CABD;
+}
+
+i{
+ padding-right: 5px;
+ padding-left: 5px;
+}
+
+/* main calendario */
+.main{
+ flex-basis: 85%;
+ text-align: center;
+ color: #154557;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ margin:5px;
+}
+
+li{
+ text-align: center;
+ border: 2px solid #154557;
+ height: 111px;
+ width: 111px;
+ list-style: none;
+ padding: 25px;
+ overflow-x: auto;
+}
